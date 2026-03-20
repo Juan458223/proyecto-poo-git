@@ -23,4 +23,14 @@ public class Proyecto {
                                " | Completada: " + t.isCompletada());
         }
     }
+   public int CalcularAvance(){
+	contador=0;
+	for (Tarea t: tareas){
+		if( t.isCompletada()){
+		contador++;
+		}
+	}
+	return contador;
+
+	}
 }
